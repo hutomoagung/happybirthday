@@ -1,0 +1,334 @@
+<html> 
+<head> 
+<title>Agung R</title> 
+<link href='https://cdn.pixabay.com/animation/2023/09/27/12/14/12-14-42-884_512.gif' rel='shortcut icon'/> 
+<!--klik kanan ' below.--> <body oncontextmenu='return false;' onkeydown='return false;' onmousedown='return false;'></br>
+</head> 
+<meta content='168' http-equiv='refresh'/>
+<style type="text/css"> 
+div#container
+{
+width: 618px;
+position: relative;
+margin-top: 0px;
+margin-left: auto;
+margin-right: auto;
+text-align: left;
+}
+body
+{
+text-align: center;
+margin: 0;
+}
+</style> 
+<script language=javascript>var rev = "fwd";
+function titlebar(val)
+{ var msg = "Selamat Ulang Tahun Sayangku Citra Amelia"; var res = " "; var speed = 100; var pos = val; msg = " "+msg+" "; var le = msg.length; if(rev == "fwd"){ if(pos < le){ pos = pos+1; scroll = msg.substr(0,pos); document.title = scroll; timer = window.setTimeout("titlebar("+pos+")",speed); } else{ rev = "bwd"; timer = window.setTimeout("titlebar("+pos+")",speed); } } else{ if(pos > 0){ pos = pos-1; var ale = le-pos; scrol = msg.substr(ale,le); document.title = scrol; timer = window.setTimeout("titlebar("+pos+")",speed); } else{ rev = "fwd"; timer = window.setTimeout("titlebar("+pos+")",speed); } }
+}
+titlebar(0);</script> 
+<SCRIPT LANGUAGE="JavaScript"> 
+TypingText = function(element, interval, cursor, finishedCallback) {
+  if((typeof document.getElementById == "undefined") || (typeof element.innerHTML == "undefined")) {
+    this.running = true;	// Never run.
+    return;
+  }
+  this.element = element;
+  this.finishedCallback = (finishedCallback ? finishedCallback : function() { return; });
+  this.interval = (typeof interval == "undefined" ? 20 : interval);
+  this.origText = this.element.innerHTML;
+  this.unparsedOrigText = this.origText;
+  this.cursor = (cursor ? cursor : "");
+  this.currentText = "";
+  this.currentChar = 0;
+  this.element.typingText = this;
+  if(this.element.id == "") this.element.id = "typingtext" + TypingText.currentIndex++;
+  TypingText.all.push(this);
+  this.running = false;
+  this.inTag = false;
+  this.tagBuffer = "";
+  this.inHTMLEntity = false;
+  this.HTMLEntityBuffer = "";
+}
+TypingText.all = new Array();
+TypingText.currentIndex = 0;
+TypingText.runAll = function() {
+  for(var i = 0; i < TypingText.all.length; i++) TypingText.all[i].run();
+}
+TypingText.prototype.run = function() {
+  if(this.running) return;
+  if(typeof this.origText == "undefined") {
+    setTimeout("document.getElementById('" + this.element.id + "').typingText.run()", this.interval);	// We haven't finished loading yet.  Have patience.
+    return;
+  }
+  if(this.currentText == "") this.element.innerHTML = "";
+//  this.origText = this.origText.replace(/<([^<])*>/, "");     // Strip HTML from text.
+  if(this.currentChar < this.origText.length) {
+    if(this.origText.charAt(this.currentChar) == "<" && !this.inTag) {
+      this.tagBuffer = "<";
+      this.inTag = true;
+      this.currentChar++;
+      this.run();
+      return;
+    } else if(this.origText.charAt(this.currentChar) == ">" && this.inTag) {
+      this.tagBuffer += ">";
+      this.inTag = false;
+      this.currentText += this.tagBuffer;
+      this.currentChar++;
+      this.run();
+      return;
+    } else if(this.inTag) {
+      this.tagBuffer += this.origText.charAt(this.currentChar);
+      this.currentChar++;
+      this.run();
+      return;
+    } else if(this.origText.charAt(this.currentChar) == "&" && !this.inHTMLEntity) {
+      this.HTMLEntityBuffer = "&";
+      this.inHTMLEntity = true;
+      this.currentChar++;
+      this.run();
+      return;
+    } else if(this.origText.charAt(this.currentChar) == ";" && this.inHTMLEntity) {
+      this.HTMLEntityBuffer += ";";
+      this.inHTMLEntity = false;
+      this.currentText += this.HTMLEntityBuffer;
+      this.currentChar++;
+      this.run();
+      return;
+    } else if(this.inHTMLEntity) {
+      this.HTMLEntityBuffer += this.origText.charAt(this.currentChar);
+      this.currentChar++;
+      this.run();
+      return;
+    } else {
+      this.currentText += this.origText.charAt(this.currentChar);
+    }
+    this.element.innerHTML = this.currentText;
+    this.element.innerHTML += (this.currentChar < this.origText.length - 1 ? (typeof this.cursor == "function" ? this.cursor(this.currentText) : this.cursor) : "");
+    this.currentChar++;
+    setTimeout("document.getElementById('" + this.element.id + "').typingText.run()", this.interval);
+  } else {
+	this.currentText = "";
+	this.currentChar = 0;
+        this.running = false;
+        this.finishedCallback();
+  }
+}
+</script> 
+
+<style> 
+body {
+background-color: black;
+color: white;
+font: normal 100% monospace;
+padding: 0;
+}
+/* REMOVE HORIZONTAL SCROLLBAR*/ 					
+   	body {								
+	overflow-x: hidden;						
+	}									
+/* REMOVE VERTICAL SCROLLBAR*/					
+	body {								
+	overflow-y: hidden;							
+	}
+td{font-family: verdana; font-size: 9pt; color: white}
+a{font-family: comic sans ms; font-size: 10pt; color: white}
+	/* REMOVE HORIZONTAL SCROLLBAR*/ 					
+   	body {								
+	overflow-x: hidden;						
+	}									
+/* REMOVE VERTICAL SCROLLBAR  */				
+	body {								
+	overflow-y: hidden;							
+	}	
+</style> 
+ 
+ 
+
+
+</script> 
+<SCRIPT> 
+var width=document.body.clientWidth;
+var height=document.body.clientHeight;
+function doClickText(who,type,step,timeOut) {
+document.getElementById(who).style.display="none";
+if(type==0) {
+reveal('revealDiv1',step,timeOut,0);
+reveal('revealDiv2',step,timeOut,1);}
+if(type==1) {
+reveal('revealDiv1',step,timeOut,2);
+reveal('revealDiv2',step,timeOut,3);}}
+function reveal(who,step,timeOut,type) {
+if(type==0)
+var where="top";
+if(type==1)
+var where="bottom";
+if(type==2)
+var where="left";
+if(type==3)
+var where="right";
+eval('var temp=document.getElementById(who).style.'+where);
+temp=parseInt(temp);
+if(type==0||type==1)
+var checkWith=height/2;
+if(type==2||type==3)
+var checkWith=width/2;
+if(-temp<checkWith) {temp-=step;eval('document.getElementById(who).style.'+where+'=temp;');setTimeout("reveal('"+who+"',"+step+",'"+timeOut+"',"+type+")", timeOut);}else {document.getElementById(who).style.display="none";document.body.scroll="yes";}}function initReveal(type,div1bg,div2bg,div1bw,div2bw,div1bc,div2bc,step,timeOut,click) {if(type==0) {var bWhere1="border-bottom";var bWhere2="border-top";var putZero1="top:0px; left:0px";var putZero2="bottom:0px; left:0px";document.write('><div id="revealDiv1" style="z-index:100; display:block; position:absolute; '+putZero1+'; background:'+div1bg+' ; width:'+(width)+'; height:'+(height/2)+'; '+bWhere1+':'+div1bc+' solid '+div1bw+'px"></div>');
+document.write('<div id="revealDiv2" style="z-index:100; display:block; position:absolute; '+putZero2+'; background:'+div2bg+' ; width:'+(width)+'; height:'+(height/2)+'; '+bWhere2+':'+div2bc+' solid '+div2bw+'px"></div>');
+if(!click) {
+reveal('revealDiv1',step,timeOut,0);
+reveal('revealDiv2',step,timeOut,1);}
+else {
+clickText(type,step,timeOut);}}
+if(type==1) {
+var bWhere1="border-right";
+var bWhere2="border-left";
+var putZero1="top:0px; left:0px";
+var putZero2="top:0px; right:0px";
+document.write('<div id="revealDiv1" style="z-index:100; display:block; position:absolute; '+putZero1+'; background:'+div1bg+' ; width:'+(width/2)+'; height:'+(height)+'; '+bWhere1+':'+div1bc+' solid '+div1bw+'px"></div>');
+document.write('<div id="revealDiv2" style="z-index:100; display:block; position:absolute; '+putZero2+'; background:'+div2bg+' ; width:'+(width/2)+'; height:'+(height)+'; '+bWhere2+':'+div2bc+' solid '+div2bw+'px"></div>');
+if(!click) {
+reveal('revealDiv1',step,timeOut,2);
+reveal('revealDiv2',step,timeOut,3);}
+else {
+clickText(type,step,timeOut);}}
+function clickText(type,step,timeOut) {
+document.write('<div id="clickText" style="z-index:101; display:block; position:absolute; top:'+(height/2-clickh/2-clickb)+'; left:'+(width/2-clickw/2-clickb)+'"><table style="border:'+clickc+' solid '+clickb+'px; background:'+clickbg+' ;width:'+clickw+'px; height:'+clickh+'; '+clickFont+'; cursor:hand; cursor:pointer" onClick="doClickText(\'clickText\','+type+','+step+','+timeOut+')"><tr><td align="middle">'+clickt+'</td></tr></table></div>');}}</SCRIPT> <SCRIPT> 
+var clickw=220; // Width
+var clickh=20; // Height
+var clickb=2; // Border width
+var clickc="black"; // Border color
+var clickbg="black"; // Background color
+var clickt="<b>E N T E R</b></td>"; // Text to display
+var clickFont="font-family:Tahoma,arial,helvetica; font-size:11pt; font-weight:bold; color:#00ff00"; // The font style of the text
+new initReveal(0,'black','black',5,5,'white','black',3,10,true);</SCRIPT> 
+ 
+ 
+ 
+            <center> 
+	    <p align="left"> 
+            </p><center> 
+            <head>
+  <meta charset="UTF-8">
+  <title>Autoplay Video 5x10 cm</title>
+  <style>
+    video {
+      width: 10cm;
+      height: 7cm;
+      object-fit: contain; /* Biar isi video tetap terisi penuh */
+    }
+  </style>
+</head>
+<body>
+
+  <video autoplay muted loop playsinline>
+    <source src="https://raw.githubusercontent.com/hutomoagung/video-host/c2212d0e180f5b7f176771e5ca6fe184fd4762be/Metamorfosa.mp4" type="video/mp4">
+    Browser Anda tidak mendukung pemutaran video.
+  </video>
+
+</body> 
+	    </center> 
+ 
+ 
+<center><p id="example1"><font size 8><b>Spesial ucapan :
+</br> 
+<div class='widget-content'> 
+<center><h1><script language="JavaScript1.2"> 
+var message="Selamat Bertambah umur Sayangku Citra Amelia"
+var neonbasecolor="black"
+var neontextcolor="white"
+var neontextcolor2="#071585"
+var flashspeed=150	// speed of flashing in milliseconds
+var flashingletters=3	// number of letters flashing in neontextcolor
+var flashingletters2=1	// number of letters flashing in neontextcolor2 (0 to disable)
+var flashpause=0	// the pause between flash-cycles in milliseconds
+///No need to edit below this line/////
+var n=0
+if (document.all||document.getElementById){
+document.write('<font color="'+neonbasecolor+'">')
+for (m=0;m<message.length;m++)
+document.write('<span id="neonlight'+m+'">'+message.charAt(m)+'</span>')
+document.write('</font>')
+}
+else
+document.write(message)
+function crossref(number){
+var crossobj=document.all? eval("document.all.neonlight"+number) : document.getElementById("neonlight"+number)
+return crossobj
+}
+function neon(){
+//Change all letters to base color
+if (n==0){
+for (m=0;m<message.length;m++)
+crossref(m).style.color=neonbasecolor
+}
+//cycle through and change individual letters to neon color
+crossref(n).style.color=neontextcolor
+if (n>flashingletters-1) crossref(n-flashingletters).style.color=neontextcolor2
+if (n>(flashingletters+flashingletters2)-1) crossref(n-flashingletters-flashingletters2).style.color=neonbasecolor
+if (n<message.length-1)
+n++
+else{
+n=0
+clearInterval(flashing)
+setTimeout("beginneon()",flashpause)
+return
+}
+}
+function beginneon(){
+if (document.all||document.getElementById)
+flashing=setInterval("neon()",flashspeed)
+}
+beginneon()</script></h1></center> 
+</div> 
+ 
+<marquee direction="up" scrollamount="1" scrolldelay="10"> 
+ 
+
+
+<center> 
+<b><font color="red" face="Courier New, Courier, mono"> [+] Selamat Ulang Tahun [+] </font><br> 
+<br>Maafin gk bisa ngasih apa-apa di ulang tahun kami<br /> 
+Maafin juga kalo mungkin sering nyebelin<br /> 
+sering bikin jenuh sama keluhan-keluhan aku<br /> 
+ 
+Maaf sampai selama ini gk bisa ngasih yang terbaik buat kamu<br /> 
+belum bisa mewujudkan impian-impian kamu<br /> 
+<br /> 
+Belum bisa ngasih kebahagiaan yang lebih buat kamu
+<br /> 
+
+
+terima kasih di sepanjang perjalanan ini<br /> 
+terima kasih buat kesabarannya<br />
+terima kasih buat segalanya <br />
+
+Aku bahagia kalo liat kamu juga bahagia <br />
+semoga begitu juga sebaliknya <br /> 
+ 
+aku nggak tau apakah ini spesial buat kamu<br />
+tapi aku berharap ini menjadi yang terspesial di hari ulang tahun kamu <br />
+Semoga di hari bertambahnya umur ini <br />
+kelak besok, lusa dan hari-hari selanjutnya <br />
+jadi hari yang selalu membahagiakan buat kamu<br /> 
+<br /> 
+
+<br> 
+<b><font color="white" face="Courier New, Courier, mono"> SELAMAT ULANG TAHUN SAYANGKU CITRA AMELIA </font><br><br/><br/>
+<b><font color="green" face="Courier New, Courier, mono"> turut mengucapkan :<br/>Presiden Prabowo, Wakil Presiden Gibran Rakabuming, Joko Widodo, Vladimir Putin, Megawati, Sugianor Sabran, Mbak Emy, Mbak Iin, Pakde, Budhe, All Family kampung arab di daerah Banjarmasin, Banjarbaru, Martapura, Rantau, Kandangan, Barabai, Balangan, Tabalong, Bartim, Barsel, Palangkaraya dan masih banyak lagi </font> 
+</center> 
+</marquee> 
+ 
+</style> 
+<script type="text/javascript"> 
+//Define first typing example:
+new TypingText(document.getElementById("example1"));
+//Define second typing example (use "slashing" cursor at the end):
+new TypingText(document.getElementById("example2"), 50, function(i){
+var ar = new Array("_"," ","_","_"); return " " + ar[i.length %
+ar.length]; });
+//Type out examples:
+TypingText.runAll();
+</script> 
+<style type="text/css"> 
+/* pushes the page to the full capacity of the viewing area */
+html {height:100%;}
